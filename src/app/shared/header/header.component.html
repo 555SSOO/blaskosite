@@ -1,14 +1,13 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row class="center-content">
-    <a routerLink="/" class="site-title header-link">Srđan Obradović</a>
+    <a routerLink="/" class="site-title header-link">Dr. Kuljić Consulting Rooms</a>
   </mat-toolbar-row>
 
   <mat-toolbar-row class="center-content" fxShow="true" fxHide.lt-md="true">
+    <a routerLink="/about" routerLinkActive="active-link" class="header-link">About</a>
     <a routerLink="/experience" routerLinkActive="active-link" class="header-link">Experience</a>
-    <a routerLink="/education" routerLinkActive="active-link" class="header-link">Education</a>
-    <a routerLink="/skills" routerLinkActive="active-link" class="header-link">Skills</a>
-    <a routerLink="/projects" routerLinkActive="active-link" class="header-link">Projects</a>
-    <a routerLink="/hobbies" routerLinkActive="active-link" class="header-link">Hobbies</a>
+    <a routerLink="/contact" routerLinkActive="active-link" class="header-link">Contact</a>
+    <a routerLink="/faq" routerLinkActive="active-link" class="header-link">FAQ</a>
   </mat-toolbar-row>
   <mat-toolbar-row fxShow="true" fxHide.gt-sm="true">
       <a (click)="toggleSidenav()" class="header-link">Menu</a>

@@ -6,7 +6,7 @@ import {Component, ViewChild} from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angularcv';
+  title = 'blaskosite';
 
   @ViewChild('sidenav', {static: false}) sidenav;
 

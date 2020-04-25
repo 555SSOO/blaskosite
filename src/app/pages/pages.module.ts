@@ -7,7 +7,7 @@ import { HobbiesComponent } from './hobbies/hobbies.component';
 import { EducationComponent } from './education/education.component';
 import { ProjectsComponent } from './projects/projects.component';
 import {SharedModule} from '../shared/shared.module';
-import {MatGridListModule, MatListModule} from '@angular/material';
+import {MatButtonModule, MatGridListModule, MatIconModule, MatListModule, MatTreeModule} from '@angular/material';
 
 
 
@@ -24,7 +24,10 @@ import {MatGridListModule, MatListModule} from '@angular/material';
         CommonModule,
         SharedModule,
         MatGridListModule,
-        MatListModule
+        MatListModule,
+        MatTreeModule,
+        MatIconModule,
+        MatButtonModule
     ]
 })
 export class PagesModule { }
