@@ -1,0 +1,20 @@
+<div class="projects-wrapper">
+  <div class="row">
+
+    <mat-accordion>
+
+      <div *ngFor="let faqItem of faqItems">
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{faqItem.headline}}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>{{faqItem.description}}</p>
+        </mat-expansion-panel>
+      </div>
+    </mat-accordion>
+
+  </div>
+</div>

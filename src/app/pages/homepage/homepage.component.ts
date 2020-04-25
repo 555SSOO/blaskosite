@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {BioItem} from '../../core/models/bio-item.model';
-import {BiographyItem} from '../../core/content/biography-item';
+import {Welcome} from '../../core/models/welcome.model';
+import {WelcomeItem} from '../../core/content/welcome-item';
 
 @Component({
   selector: 'app-homepage',
@@ -9,12 +9,12 @@ import {BiographyItem} from '../../core/content/biography-item';
 })
 export class HomepageComponent implements OnInit {
 
-  biography: BioItem;
+  welcome: Welcome;
 
   constructor() { }
 
   ngOnInit() {
-    this.biography = BiographyItem.BIOGRAPHY_ITEM;
+    this.welcome = WelcomeItem.WELCOME_ITEM;
   }
 
 }

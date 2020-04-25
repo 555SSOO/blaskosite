@@ -2,15 +2,15 @@
 import { Component } from '@angular/core';
 import {MatTreeFlatDataSource, MatTreeFlattener} from '@angular/material/tree';
 import {FlatTreeControl} from '@angular/cdk/tree';
-import {ExperienceItems} from '../../core/content/experience-items';
+import {AboutItems} from '../../core/content/about-items';
 
 
 @Component({
-  selector: 'app-experience',
-  templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.scss']
+  selector: 'app-about',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.scss']
 })
-export class ExperienceComponent {
+export class AboutComponent {
 
   private transformer = (node: TreeNode, level: number) => {
     return {
@@ -21,7 +21,7 @@ export class ExperienceComponent {
   }
 
   constructor() {
-    this.dataSource.data = ExperienceItems.EXPERIENCE_TREE_DATA;
+    this.dataSource.data = AboutItems.ABOUT_TREE_DATA;
   }
 
   treeControl = new FlatTreeControl<FlatNode>(

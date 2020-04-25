@@ -11,10 +11,25 @@
   }
 }
 
+.welcome-title{
+  position: relative;
+  float: left;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+.welcome-message{
+  position: relative;
+  float: left;
+  left: 50%;
+  transform: translate(-50%);
+  color: #ffffff;
+}
+
 
 .bg {
   /* The image used */
-  background-image: url("src/assets/img/HomepageBG.jpeg");
+  background-image: url("src/assets/img/homepage.png");
   /* Full height */
   height: 100%;
   width: 100%;
